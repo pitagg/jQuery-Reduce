@@ -1,0 +1,30 @@
+JQuery-Reduce é um plugin simples para filtrar elementos diretamente na interface de usuário. 
+
+* Requer o carregamento da biblioteca jQuery.
+
+
+Método: 
+
+    $().reduce(textToFilter, options)
+
+    
+Descrição:    
+
+    É executado a partir de uma lista de elementos que serão filtrados e mostra apenas aqueles que possuem o texto da busca.
+
+    
+Parâmetros:
+
+    - textToFilter: É o texto para pesquisar os elementos da lista. Se for informado o filtro é automaticamente executado, caso, contrário apenas faz as associações definidas e options.
+    
+    - options: É um objeto que pode conter as seguintes opções:
+    
+        - caseSensitive (false): Se for true, então maiúsculas e minúsculas serão diferenciadas na pesquisa.
+        
+        - showItemMethod ('show'): Método do jQuery que deverá ser executado para mostrar os elementos que correspondem ao texto pesquisado. Exemplo: Se for 'fadeIn', os elementos encontrados serão mostrados suavemente.
+        
+        - hideItemMethod ('hide'): Método do jQuery que deverá ser executado para ocultar os elementos que não correspondem ao texto pesquisado. Exemplo: Se for 'fadeOut', os elementos que não correspondem ao texto pesquisado serão ocultados suavemente.
+        
+        - inputElementToFilter (''): Seletor jQuery que aponte para os elementos de entrada de texto que serão utilizados para efetuar a pesquisa na lista. Exemplo: Se for '#input-text', então ao digitar um texto no elemento com o id '#input-text', esse texto será utilizado para filtrar os elementos da lista.
+    
+
